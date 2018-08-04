@@ -17,6 +17,7 @@ end
 qs = ENV['QUERY_STRING']
 qs = 'イワシ' unless qs && !qs.empty?
 qs = URI.decode(qs).force_encoding("UTF-8")
+qs = qs[0,100]
 
 
 puts '<html><body>'
