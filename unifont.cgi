@@ -21,6 +21,7 @@ qs = qs[0,100]
 
 
 puts '<html><body>'
+puts '<p><a href="https://github.com/cookie-s/unifont">source</a></p>'
 puts %q(<form onsubmit="location.href = '?' + encodeURIComponent(document.getElementById('text').value); return false;"> <input id="text" type="text" /> <input type="submit" /> </form>)
 
 puts '<pre>'
